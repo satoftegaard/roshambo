@@ -24,8 +24,8 @@ const computerIncrement = () => {
   const computerScore = parseInt(computerScoreText) + 1
   $('.scores .computer').textContent = computerScore
 
-  // $('figure.player').className = 'player draw'
-  // $('figure.computer').className = 'computer draw'
+  $('figure.player').className = 'player lose'
+  $('figure.computer').className = 'computer win'
 
   if (computerScore === 2) {
     gameOver(false)
